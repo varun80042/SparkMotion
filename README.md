@@ -10,4 +10,4 @@ ncat -l 9999
 spark-submit --conf "spark.pyspark.python={PYTHON_EXE_PATH}" spark-solution.py
 ```
 
-You can run ```python -m tools.main``` for a model checkpoint. 
+Run the command ```python -m tools.main``` for a model checkpoint. 
