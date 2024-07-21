@@ -1,3 +1,4 @@
+import os
 import torch
 from torch.utils.data import DataLoader, TensorDataset
 import torch.optim as optim
@@ -9,6 +10,7 @@ from tools.train import train, evaluate
 from tools.predict import predict
 
 checkpoint_dir = './checkpoint/'
+os.makedirs(checkpoint_dir, exist_ok=True)
 
 X_train, Y_train = read_csv('./data/train.csv')
 X_test, Y_test = read_csv('./data/test.csv')
