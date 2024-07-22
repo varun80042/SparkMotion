@@ -10,4 +10,4 @@ ncat -l 9999
 spark-submit --conf "spark.pyspark.python={PYTHON_EXE_PATH}" spark-solution.py
 ```
 
-Run the command ```python -m tools.main``` for a model checkpoint. 
+Run ```python -m tools.get_model``` to fetch the model from AWS S3 bucket. Alternatively, run the command ```python -m tools.main``` for a model checkpoint. 
